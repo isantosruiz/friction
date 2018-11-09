@@ -16,7 +16,8 @@ function epsilon = roughness(Re,f)
 %      f = [0.022786, 0.021086, 0.020241, 0.019698]; 
 %      epsilon = roughness(Re,f)
 %---------------------------------------------------------
-%   Ildeberto de los Santos Ruiz, 2018
+%   (c) 2018
+%   Ildeberto de los Santos Ruiz
 %   Certified MATLAB Associate
 %---------------------------------------------------------
 objfunc = @(epsilon)(LambertW(Re(:),epsilon)-f(:))'*(LambertW(Re(:),epsilon)-f(:));

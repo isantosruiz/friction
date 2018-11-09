@@ -20,7 +20,8 @@ function f = friction(Re,epsilon,method)
 %      [Re,epsilon] = meshgrid(1e4:1e4:1e5,1e-4:1e-4:1e-3);
 %      f = friction(Re,epsilon,'Serghides');
 %----------------------------------------------------------
-%   Ildeberto de los Santos Ruiz, 2018
+%   (c) 2018
+%   Ildeberto de los Santos Ruiz
 %   Certified MATLAB Associate
 %----------------------------------------------------------
 if nargin < 3

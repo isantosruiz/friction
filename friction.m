@@ -21,8 +21,7 @@ function f = friction(Re,epsilon,method)
 %      f = friction(Re,epsilon,'Serghides');
 %      surf(Re,epsilon,f)
 %----------------------------------------------------------
-%   (c) 2018
-%   Ildeberto de los Santos Ruiz
+%   (c) 2018, Ildeberto de los Santos Ruiz
 %----------------------------------------------------------
 if nargin < 3
     method = 'iterative';

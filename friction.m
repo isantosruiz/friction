@@ -19,10 +19,12 @@ function f = friction(Re,epsilon,method)
 %      f = friction(1e5,1e-4,'Swamee-Jain')
 %      [Re,epsilon] = meshgrid(1e4:1e4:1e5,1e-4:1e-4:1e-3);
 %      f = friction(Re,epsilon,'Serghides');
-%      surf(Re,epsilon,f)
 %----------------------------------------------------------
-%   (c) 2018, Ildeberto de los Santos Ruiz
+%   (c) 2018
+%   Ildeberto de los Santos Ruiz
+%   Certified MATLAB Associate
 %----------------------------------------------------------
+
 if nargin < 3
     method = 'iterative';
 end

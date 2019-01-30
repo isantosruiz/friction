@@ -18,6 +18,12 @@ function epsilon = roughness(Re,f)
 %---------------------------------------------------------
 %   (c) 2018, Ildeberto de los Santos Ruiz
 %---------------------------------------------------------
+%   Cite as:
+%
+%   Ildeberto de los Santos Ruiz. (2018, November 9).
+%   Friction and Roughness v2.0 (Version v2.0). Zenodo.
+%   http://doi.org/10.5281/zenodo.1481992
+%---------------------------------------------------------
 
 objfunc = @(epsilon)(LambertW(Re(:),epsilon)-f(:))'*(LambertW(Re(:),epsilon)-f(:));
 options = optimoptions('fsolve','Algorithm','Levenberg-Marquardt','Display','off');

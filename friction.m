@@ -19,12 +19,16 @@ function f = friction(Re,epsilon,method)
 %      f = friction(1e5,1e-4,'Swamee-Jain')
 %      [Re,epsilon] = meshgrid(1e4:1e4:1e5,1e-4:1e-4:1e-3);
 %      f = friction(Re,epsilon,'Serghides');
+%      surf(Re,epsilon,f)
 %----------------------------------------------------------
-%   (c) 2018
-%   Ildeberto de los Santos Ruiz
-%   Certified MATLAB Associate
+%   (c) 2018, Ildeberto de los Santos Ruiz
 %----------------------------------------------------------
-
+%   Cite as:
+%
+%   Ildeberto de los Santos Ruiz. (2018, November 9).
+%   Friction and Roughness v2.0 (Version v2.0). Zenodo.
+%   http://doi.org/10.5281/zenodo.1481992
+%---------------------------------------------------------
 if nargin < 3
     method = 'iterative';
 end

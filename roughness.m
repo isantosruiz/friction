@@ -30,7 +30,7 @@ function epsilon = roughness(varargin)
 %   Cite as:
 %      Santos-Ruiz, Ildeberto. (2018, November 9).
 %      Friction and Roughness. Zenodo.
-%      http://doi.org/10.5281/zenodo.1481992
+%      http://doi.org/10.5281/zenodo.1481562
 %-----------------------------------------------------------
 
 switch nargin

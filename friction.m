@@ -27,7 +27,7 @@ function f = friction(Re,epsilon,method)
 %   Cite as:
 %      Santos-Ruiz, Ildeberto. (2018, November 9).
 %      Friction and Roughness. Zenodo.
-%      http://doi.org/10.5281/zenodo.1481992
+%      http://doi.org/10.5281/zenodo.1481562
 %---------------------------------------------------------
 if nargin < 3
     method = 'iterative';

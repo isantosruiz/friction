@@ -1,11 +1,10 @@
 function f = friction(Re,epsilon,method)
-%FRICTION  Compute the Darcy-Weisbach friction factor for
+%FRICTION  Computes the Darcy-Weisbach friction factor for
 %   turbulent flow in pipes using different methods.
 %----------------------------------------------------------
-%   Sintax
+%   Syntax:
 %      f = friction(Re,epsilon,method)
 %----------------------------------------------------------
-%   Arguments
 %           Re : Reynolds number.
 %      epsilon : Relative roughness coefficient, k/D.
 %       method : Algorithm or method to use.
@@ -14,20 +13,21 @@ function f = friction(Re,epsilon,method)
 %                'LambertW' and 'iterative' (default).
 %            f : Darcy-Weisbach friction factor.
 %----------------------------------------------------------
-%   Examples
+%   Examples:
 %      f = friction(1e5,1e-4)
 %      f = friction(1e5,1e-4,'Swamee-Jain')
 %      [Re,epsilon] = meshgrid(1e4:1e4:1e5,1e-4:1e-4:1e-3);
 %      f = friction(Re,epsilon,'Serghides');
 %      surf(Re,epsilon,f)
 %----------------------------------------------------------
-%   (c) 2018, Ildeberto de los Santos Ruiz
+%   Author:
+%      Ildeberto de los Santos Ruiz
+%      idelossantos@ittg.edu.mx
 %----------------------------------------------------------
 %   Cite as:
-%
-%   Ildeberto de los Santos Ruiz. (2018, November 9).
-%   Friction and Roughness v2.0 (Version v2.0). Zenodo.
-%   http://doi.org/10.5281/zenodo.1481992
+%      Santos-Ruiz, Ildeberto. (2018, November 9).
+%      Friction and Roughness. Zenodo.
+%      http://doi.org/10.5281/zenodo.1481992
 %---------------------------------------------------------
 if nargin < 3
     method = 'iterative';
